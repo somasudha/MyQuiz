@@ -36,7 +36,7 @@ class Quiz {
 
     text("Result:", 425, 350);
 
-    if (allContestants !== undefied) {
+    if (allContestants !== undefined) {
       fill("Blue");
       textSize(20);
       text("If your name is green, you have the right answer!", 130, 230);
