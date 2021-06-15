@@ -29,10 +29,7 @@ class Quiz {
   }
 
   play(){
-    Question.title.hide();
-    Question.input1.hide();
-    Question.button.hide();
-    Question.input2.hide();
+    Question.hide();
 
     text("Result:", 425, 350);
 
