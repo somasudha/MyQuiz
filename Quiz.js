@@ -30,8 +30,8 @@ class Quiz {
 
   play(){
     Question.hide();
-
     text("Result:", 425, 350);
+    getPlayerInfo();
 
     if (allContestants !== undefined) {
       fill("Blue");
