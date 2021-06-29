@@ -20,7 +20,7 @@ class Question {
   }
 
   display(){
-    this.title.html("MyQuiz Game");
+    this.title.html("Riddle");
     this.title.position(350, 0);
 
     this.question.html("Question:- You have to go into one of these three rooms for 30 minutes. Which one is the safest? " );
