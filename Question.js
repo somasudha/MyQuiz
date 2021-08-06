@@ -52,22 +52,3 @@ class Question {
     });
   }
 }
-
-    this.input1.position(150, 230);
-    this.input2.position(350, 230);
-    this.button.position(290, 300);
-
-    this.button.mousePressed(()=>{
-      this.title.hide();
-      this.input1.hide();
-      this.input2.hide();
-      this.button.hide();
-      contestant.name = this.input1.value();
-      contestant.answer = this.input2.value();
-      contestantCount+=1;
-      contestant.index = contestantCount;
-      contestant.update();
-      contestant.updateCount(contestantCount);
-    });
-  }
-}
