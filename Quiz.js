@@ -29,24 +29,32 @@ class Quiz {
   }
 
   play(){
-    Question.hide();
-    text("Result:", 425, 350);
-    getPlayerInfo();
-
-    if (allContestants !== undefined) {
+    question.hide();
+    background("Yellow");
+    fill(0);
+    textSize(30);
+    text("Result of the Quiz",340, 50);
+    text("----------------------------",320, 65);
+    Contestant.getPlayerInfo();
+    if(allContestants !== undefined){
+      debugger;
+      var display_Answers = 230;
       fill("Blue");
       textSize(20);
-      text("If your name is green, you have the right answer!", 130, 230);
-    }
+      text("*NOTE: Contestant who answered correct are highlighted in green color!",130,230);
 
-    for(var plr in allContestants){
-      debugger;
-      var correctAns = "2";
-      if (correctAns === allContestants[plr].answer)
-        fill("Green")
-      else
-        fill("red");
+      for(var plr in allContestants){
+        debugger;
+        var correctAns = "2";
+        if (correctAns === allContestants[plr].answer)
+          fill("Green")
+        else
+          fill("red");
+
+        display_Answers+=30;
+        textSize(20);
+        text(allContestants[plr].name + ": " + allContestants[plr].answer, 250,display_Answers)
+      }
     }
   }
-
 }
